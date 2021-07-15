@@ -1,7 +1,7 @@
 {
   "name": "jsonp",
   "description": "A sane JSONP implementation.",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "dependencies": {
     "debug": "^2.1.3"
   },
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LearnBoost/jsonp.git"
+    "url": "https://github.com/longgt/jsonp.git"
   },
   "devDependencies": {
     "tape": "^3.5.0",
