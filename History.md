@@ -1,4 +1,9 @@
 
+0.3.0 / 2021-07-15
+==================
+
+ * add support for `refererPolicy`, `crossOrigin`, `integrity`
+
 0.2.1 / 2016-10-31
 ==================
 
