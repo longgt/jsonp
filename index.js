@@ -51,6 +51,7 @@ function jsonp(url, opts, fn){
 
   var param = opts.param || 'callback';
   var timeout = null != opts.timeout ? opts.timeout : 60000;
+  var referrerPolicy = opts.referrerPolicy || 'no-referrer';
   var enc = encodeURIComponent;
   var target = document.getElementsByTagName('script')[0] || document.head;
   var script;
@@ -91,6 +92,13 @@ function jsonp(url, opts, fn){
   // create script
   script = document.createElement('script');
   script.src = url;
+  script.referrerPolicy = referrerPolicy;
+  if (opts.integrity != null) {
+    script.integrity = opts.integrity;
+  }
+  if (opts.crossOrigin != null) {
+    script.crossOrigin = opts.crossOrigin;
+  }
   target.parentNode.insertBefore(script, target);
 
   return cancel;
