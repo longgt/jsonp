@@ -39,6 +39,15 @@ $ bower install jsonp
     handle jsonp responses (defaults to `__jp`)
   - `name` (`String`) name of the global callback functions that
     handle jsonp responses (defaults to `prefix` + incremented counter)
+  - `refererPolicy` (`String`) specifies the `refererPolicy` when creating script tag. 
+
+    See https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement/referrerPolicy for more details.
+  - `crossOrigin` (`String`) specifies the `crossOrigin` when creating script tag. Possible values: `anonymous`|`use-credentials`
+
+    See https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin for more details.
+  - `integrity` (`String`) specifies the `integrity` when creating script tag. 
+
+    See https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity for more details.   
 - `fn` callback
 
 The callback is called with `err, data` parameters.
